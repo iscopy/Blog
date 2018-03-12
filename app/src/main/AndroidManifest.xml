@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TelActivity" />
-        <activity android:name=".ShortMessageActivity"></activity>
+        <activity android:name=".ShortMessageActivity" />
+        <activity android:name=".ToastActivity"></activity>
     </application>
 
 </manifest>

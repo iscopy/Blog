@@ -32,6 +32,13 @@
                 android:layout_margin="10dp"
                 android:text="调用系统发送短信"/>
 
+            <Button
+                android:id="@+id/toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="带图片的消息提示框"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
