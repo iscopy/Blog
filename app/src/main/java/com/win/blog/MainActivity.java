@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button tel;
+    private Button short_message;//短信
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,9 +19,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void init(){
         tel = (Button)findViewById(R.id.tel);
+        short_message = (Button)findViewById(R.id.short_message);
     }
     public void initData(){
         tel.setOnClickListener(this);
+        short_message.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.tel:
                 startActivity(new Intent(MainActivity.this,TelActivity.class));
+                break;
+            case R.id.short_message://短信
+                startActivity(new Intent(MainActivity.this,ShortMessageActivity.class));
                 break;
         }
     }

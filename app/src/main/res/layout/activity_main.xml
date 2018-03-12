@@ -15,14 +15,22 @@
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/tel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="调用系统电话"/>
+                android:text="调用系统拨打电话"/>
+
+            <Button
+                android:id="@+id/short_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="调用系统发送短信"/>
 
         </LinearLayout>
     </ScrollView>
