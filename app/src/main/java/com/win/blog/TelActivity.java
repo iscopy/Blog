@@ -32,10 +32,10 @@ public class TelActivity extends AppCompatActivity implements View.OnClickListen
         switch(view.getId()){
             case R.id.goto_tel:
                 String tel = input_tel.getText().toString();
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_CALL);
-                intent.setData(Uri.parse(tel));
-                startActivity(intent);
+                Intent intent = new Intent();               //创建Intent对象
+                intent.setAction(Intent.ACTION_CALL);      //设置动作为拨打电话
+                intent.setData(Uri.parse("tel:" + tel));   // 设置要拨打的电话号码
+                startActivity(intent);                      //启动Activity
                 break;
         }
     }
